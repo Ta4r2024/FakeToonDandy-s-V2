@@ -228,6 +228,18 @@ Section:NewButton("Trol-Mobile Shiftlock", "ButtonInfo", function()
     loadstring(game:HttpGet("https://github.com/ltseverydayyou/uuuuuuu/blob/main/shiftlock?raw=true"))()
 end)
 
+local Tab = Window:NewTab("FakeOwner")
+
+local Section = Tab:NewSection("Owner")
+
+Section:NewButton("OwnerOff", "Owner", function()
+    game.Workspace.Players.TOXICMacsual.HumanoidRootPart.NameTag.Frame.GroupRank.Visible = false
+end)
+
+Section:NewButton("Owner", "Owner", function()
+    game.Workspace.Players.TOXICMacsual.HumanoidRootPart.NameTag.Frame.GroupRank.Visible = true
+end)
+
 local Tab = Window:NewTab("Creator")
 
 local Section = Tab:NewSection("Creator")
